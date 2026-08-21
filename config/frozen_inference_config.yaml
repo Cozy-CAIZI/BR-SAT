@@ -1,0 +1,36 @@
+release: v1.0.0
+model_version: AIRBPTSAT_V2_CANDIDATE_20260717
+input_contract:
+  examination_level: true
+  required_roles:
+    - rbpt
+    - sat25
+    - sat50
+    - sat100
+    - sat200
+  standard_sat_dilutions:
+    - "1:25"
+    - "1:50"
+    - "1:100"
+    - "1:200"
+ensemble:
+  member_manifest: frozen_ensemble_v1.0.0.json
+  expected_member_count: 15
+  composition: five_outer_folds_by_three_random_seeds
+  per_member_temperature_calibration: true
+  probability_aggregation: arithmetic_mean
+decision:
+  three_class_rule: direct_argmax
+  negative_class_id: 0
+  binary_mapping:
+    negative: non-reactive
+    weak_positive: reactive
+    positive: reactive
+  additional_probability_threshold: false
+continuous_score:
+  name: q_R
+  definition: p_weak_positive_plus_p_positive
+  role: discrimination_analyses_only
+clinical_boundary:
+  intended_use: research_reproducibility_and_expert_governed_second_reader_evaluation
+  autonomous_diagnosis: false

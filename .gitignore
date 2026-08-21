@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+build/
+dist/
+*.egg-info/
+results/
+models/**/*.pth
+models/**/*.pt
+models/**/*.ckpt
+!models/README.md

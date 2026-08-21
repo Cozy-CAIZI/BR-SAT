@@ -1,0 +1,11 @@
+{
+  "release": "v1.0.0",
+  "public_source_code": true,
+  "public_model_weights": false,
+  "model_weights_in_public_repository": false,
+  "model_weight_restriction_rationale": null,
+  "model_weight_access_conditions": null,
+  "participant_level_images_in_public_repository": false,
+  "hospital_identifying_metadata_in_public_repository": false,
+  "confidential_clinical_data_in_public_repository": false
+}

@@ -1,0 +1,204 @@
+{
+  "model_version": "AIRBPTSAT_V2_CANDIDATE_20260717",
+  "architecture": "dual_view_highres_roi_reaction_evidence_uniformweight_v2",
+  "source_recipe": "R5-B technical-hardening only",
+  "outer_fold_count": 5,
+  "repeat_seed_count": 3,
+  "aggregation": "arithmetic mean across repeated outer-fold predictions per patient",
+  "checkpoint_objective": "inner-tuning robust_clinical_utility",
+  "review_policy": {
+    "version": "airbptsat_clinical_review_v1",
+    "status": "prespecified_from_development_images_before_confirmation",
+    "locked_validation_used": false,
+    "weak_threshold_proximity_margin": 0.05,
+    "reaction_confidence_floor": 0.8,
+    "discordance_rules": [
+      "high-confidence RBPT strong versus four high-confidence SAT no-agglutination results",
+      "high-confidence RBPT no-agglutination versus at least one high-confidence SAT strong result"
+    ],
+    "quality_reference": {
+      "method": "role-specific label-free development-image support limits",
+      "lower_quantile": 0.005,
+      "upper_quantile": 0.995,
+      "thumbnail_max_side": 384,
+      "role_limits": {
+        "rbpt": {
+          "reference_count": 618,
+          "minimum_short_side": 124,
+          "minimum_mean_luminance": 0.02039133619517088,
+          "maximum_mean_luminance": 0.8005356016755103,
+          "minimum_contrast_std": 0.04341429151594639,
+          "maximum_clipped_fraction": 0.9113931747443305,
+          "minimum_laplacian_variance": 3.153605211991817e-05
+        },
+        "sat25": {
+          "reference_count": 618,
+          "minimum_short_side": 70,
+          "minimum_mean_luminance": 0.021874847048893573,
+          "maximum_mean_luminance": 0.7033514922857282,
+          "minimum_contrast_std": 0.04238610066473484,
+          "maximum_clipped_fraction": 0.8871879724321917,
+          "minimum_laplacian_variance": 0.00010288579138432396
+        },
+        "sat50": {
+          "reference_count": 618,
+          "minimum_short_side": 78,
+          "minimum_mean_luminance": 0.017267293818295,
+          "maximum_mean_luminance": 0.6463169464468955,
+          "minimum_contrast_std": 0.04152410203590989,
+          "maximum_clipped_fraction": 0.9074646509559804,
+          "minimum_laplacian_variance": 4.706934883870417e-05
+        },
+        "sat100": {
+          "reference_count": 618,
+          "minimum_short_side": 76,
+          "minimum_mean_luminance": 0.014037598585709929,
+          "maximum_mean_luminance": 0.6821001580357549,
+          "minimum_contrast_std": 0.03870819017291069,
+          "maximum_clipped_fraction": 0.9097978546020453,
+          "minimum_laplacian_variance": 5.103794323076727e-05
+        },
+        "sat200": {
+          "reference_count": 618,
+          "minimum_short_side": 94,
+          "minimum_mean_luminance": 0.013917095591314137,
+          "maximum_mean_luminance": 0.6767908492684364,
+          "minimum_contrast_std": 0.03996697749942541,
+          "maximum_clipped_fraction": 0.9289692085371274,
+          "minimum_laplacian_variance": 6.700835445371922e-05
+        }
+      }
+    },
+    "clinical_boundary": "Review flags do not overwrite the three-class prediction. RBPT and SAT remain independent assays, and discordance can be clinically real."
+  },
+  "review_policy_sha256": "329eb34226a812e6f0ebd64c25e272c7e029ea45966234e4cb9f5f6ea6ac17d4",
+  "members": [
+    {
+      "repeat_seed": 20260715,
+      "outer_fold": 0,
+      "checkpoint": "seed_20260715/outer_fold_0/best_robust_clinical_utility.pth",
+      "sha256": "0e879500e687007e881a62d7d15e25c3e6605432daadd76603fef7e711f4435d",
+      "temperature": 1.225,
+      "inner_weak_threshold": 0.64
+    },
+    {
+      "repeat_seed": 20260715,
+      "outer_fold": 1,
+      "checkpoint": "seed_20260715/outer_fold_1/best_robust_clinical_utility.pth",
+      "sha256": "b810c7751aea4841ff2e96c9b74b6e5dbdce3e2ceccad1eb007218106eb19e0d",
+      "temperature": 1.25,
+      "inner_weak_threshold": 0.58
+    },
+    {
+      "repeat_seed": 20260715,
+      "outer_fold": 2,
+      "checkpoint": "seed_20260715/outer_fold_2/best_robust_clinical_utility.pth",
+      "sha256": "040e27567405bec6dc8927968c12bac4c7863e2a54c001537d3bd47fc19b5a34",
+      "temperature": 1.75,
+      "inner_weak_threshold": 0.36
+    },
+    {
+      "repeat_seed": 20260715,
+      "outer_fold": 3,
+      "checkpoint": "seed_20260715/outer_fold_3/best_robust_clinical_utility.pth",
+      "sha256": "11f7514457dc9cb3b48b5a379d85ecad1d8f6207152e8b81814a640b5cbd667c",
+      "temperature": 1.5,
+      "inner_weak_threshold": 0.34
+    },
+    {
+      "repeat_seed": 20260715,
+      "outer_fold": 4,
+      "checkpoint": "seed_20260715/outer_fold_4/best_robust_clinical_utility.pth",
+      "sha256": "e044daed7d480a818e575f67bf62a1db7c6e87594945cc2a64670e743cde95ec",
+      "temperature": 1.4500000000000002,
+      "inner_weak_threshold": 0.3
+    },
+    {
+      "repeat_seed": 20260716,
+      "outer_fold": 0,
+      "checkpoint": "seed_20260716/outer_fold_0/best_robust_clinical_utility.pth",
+      "sha256": "8cf1c156a7dfe64a10f46f932a7c8309d24888a561bf857d05bc70745a3f938a",
+      "temperature": 1.5,
+      "inner_weak_threshold": 0.37
+    },
+    {
+      "repeat_seed": 20260716,
+      "outer_fold": 1,
+      "checkpoint": "seed_20260716/outer_fold_1/best_robust_clinical_utility.pth",
+      "sha256": "543693741ad0ad7971479282cdf47381f615e1bc107bc2f146c260a3920a2144",
+      "temperature": 1.55,
+      "inner_weak_threshold": 0.49
+    },
+    {
+      "repeat_seed": 20260716,
+      "outer_fold": 2,
+      "checkpoint": "seed_20260716/outer_fold_2/best_robust_clinical_utility.pth",
+      "sha256": "9b12ea5a405e9b0316f27e7a314fc82cb6b4a59d61e58139f0e9670579f66b85",
+      "temperature": 1.4500000000000002,
+      "inner_weak_threshold": 0.5
+    },
+    {
+      "repeat_seed": 20260716,
+      "outer_fold": 3,
+      "checkpoint": "seed_20260716/outer_fold_3/best_robust_clinical_utility.pth",
+      "sha256": "09358e211b7a98d31993da1d28debae7ead3078b0b23ed84a0e5fec1f7f1b293",
+      "temperature": 1.55,
+      "inner_weak_threshold": 0.49
+    },
+    {
+      "repeat_seed": 20260716,
+      "outer_fold": 4,
+      "checkpoint": "seed_20260716/outer_fold_4/best_robust_clinical_utility.pth",
+      "sha256": "696d7e678746446fcfeef0d000562c19c61f0c65978aa35e67c4d604670c5c21",
+      "temperature": 1.675,
+      "inner_weak_threshold": 0.51
+    },
+    {
+      "repeat_seed": 20260717,
+      "outer_fold": 0,
+      "checkpoint": "seed_20260717/outer_fold_0/best_robust_clinical_utility.pth",
+      "sha256": "08c4e630e545f7723e20442b757c016800c9b2a32324a71561dbc171a33ac6cd",
+      "temperature": 1.275,
+      "inner_weak_threshold": 0.52
+    },
+    {
+      "repeat_seed": 20260717,
+      "outer_fold": 1,
+      "checkpoint": "seed_20260717/outer_fold_1/best_robust_clinical_utility.pth",
+      "sha256": "2039d347997dd5a7720c27c7ff121e7c0b8333cd55b91b8f54ba1a3a87f3aae9",
+      "temperature": 1.4,
+      "inner_weak_threshold": 0.34
+    },
+    {
+      "repeat_seed": 20260717,
+      "outer_fold": 2,
+      "checkpoint": "seed_20260717/outer_fold_2/best_robust_clinical_utility.pth",
+      "sha256": "42cc8db432db0612fddb4b456d80c2ca24a87fc3d440ad5f1bfb57bb7697e981",
+      "temperature": 1.375,
+      "inner_weak_threshold": 0.5
+    },
+    {
+      "repeat_seed": 20260717,
+      "outer_fold": 3,
+      "checkpoint": "seed_20260717/outer_fold_3/best_robust_clinical_utility.pth",
+      "sha256": "edfc2b63809410e5d37f1b0cf55c7db13a54590a5df16b06fca4dc7ad251adeb",
+      "temperature": 1.375,
+      "inner_weak_threshold": 0.45
+    },
+    {
+      "repeat_seed": 20260717,
+      "outer_fold": 4,
+      "checkpoint": "seed_20260717/outer_fold_4/best_robust_clinical_utility.pth",
+      "sha256": "3339f6adb8e20cb18465075279022b0c900f50fe6c52f7636d1ad7897d616c02",
+      "temperature": 1.6,
+      "inner_weak_threshold": 0.62
+    }
+  ],
+  "nested_cv_evaluation_complete": true,
+  "deployment_model_frozen": false,
+  "deployment_note": "These checkpoints estimate exploratory development performance only. Mac-side audit must freeze the policy before any separate deployment fit or new-cohort evaluation.",
+  "locked_validation_used": false,
+  "historical_160_200_validation_reused": false,
+  "input_fingerprint_sha256": "d46197f0305c34848264bc7b65299aca66ee18db30d3bf00c180561c723f4ab9",
+  "trainer_source_sha256": "a6a46aa7e2c6e0d35d2f37a82608deaa22457d9d5b66e787ac35f20fb579efb9"
+}

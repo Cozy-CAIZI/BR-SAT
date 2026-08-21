@@ -1,0 +1,18 @@
+{
+  "input": "examples/synthetic/manifest.csv",
+  "synthetic_only": true,
+  "ensemble_member_count": 15,
+  "expected": {
+    "sample_id": "SYNTHETIC-001",
+    "p_negative": 0.5248205858,
+    "p_weak_positive": 0.2148418302,
+    "p_positive": 0.2603375932,
+    "q_reactive": 0.4751794234,
+    "frozen_three_class_prediction_id": 0,
+    "frozen_three_class_prediction": "negative",
+    "binary_prediction_id": 0,
+    "binary_prediction": "non-reactive"
+  },
+  "probability_tolerance": 0.0001,
+  "acceptance_note": "The exact class and binary mapping must match. Small floating-point variation across supported devices is allowed within the stated probability tolerance. This synthetic output is a software-path check and has no clinical meaning."
+}
