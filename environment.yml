@@ -1,0 +1,13 @@
+name: br-sat
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy>=2.0,<3
+  - pillow>=11,<13
+  - matplotlib>=3.9,<4
+  - pip
+  - pip:
+      - torch>=2.6,<3
+      - torchvision>=0.21,<1

@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "verification_scope": "controlled-source weights; read-only hash and size verification",
+  "member_count": 15,
+  "total_bytes": 216113265,
+  "largest_file_bytes": 14407551,
+  "github_object_limit_bytes": 104857600,
+  "all_files_below_github_object_limit": true,
+  "members": [
+    {
+      "checkpoint": "seed_20260715/outer_fold_0/best_robust_clinical_utility.pth",
+      "bytes": 14407551,
+      "sha256": "0e879500e687007e881a62d7d15e25c3e6605432daadd76603fef7e711f4435d"
+    },
+    {
+      "checkpoint": "seed_20260715/outer_fold_1/best_robust_clinical_utility.pth",
+      "bytes": 14407551,
+      "sha256": "b810c7751aea4841ff2e96c9b74b6e5dbdce3e2ceccad1eb007218106eb19e0d"
+    },
+    {
+      "checkpoint": "seed_20260715/outer_fold_2/best_robust_clinical_utility.pth",
+      "bytes": 14407551,
+      "sha256": "040e27567405bec6dc8927968c12bac4c7863e2a54c001537d3bd47fc19b5a34"
+    },
+    {
+      "checkpoint": "seed_20260715/outer_fold_3/best_robust_clinical_utility.pth",
+      "bytes": 14407551,
+      "sha256": "11f7514457dc9cb3b48b5a379d85ecad1d8f6207152e8b81814a640b5cbd667c"
+    },
+    {
+      "checkpoint": "seed_20260715/outer_fold_4/best_robust_clinical_utility.pth",
+      "bytes": 14407551,
+      "sha256": "e044daed7d480a818e575f67bf62a1db7c6e87594945cc2a64670e743cde95ec"
+    },
+    {
+      "checkpoint": "seed_20260716/outer_fold_0/best_robust_clinical_utility.pth",
+      "bytes": 14407551,
+      "sha256": "8cf1c156a7dfe64a10f46f932a7c8309d24888a561bf857d05bc70745a3f938a"
+    },
+    {
+      "checkpoint": "seed_20260716/outer_fold_1/best_robust_clinical_utility.pth",
+      "bytes": 14407551,
+      "sha256": "543693741ad0ad7971479282cdf47381f615e1bc107bc2f146c260a3920a2144"
+    },
+    {
+      "checkpoint": "seed_20260716/outer_fold_2/best_robust_clinical_utility.pth",
+      "bytes": 14407551,
+      "sha256": "9b12ea5a405e9b0316f27e7a314fc82cb6b4a59d61e58139f0e9670579f66b85"
+    },
+    {
+      "checkpoint": "seed_20260716/outer_fold_3/best_robust_clinical_utility.pth",
+      "bytes": 14407551,
+      "sha256": "09358e211b7a98d31993da1d28debae7ead3078b0b23ed84a0e5fec1f7f1b293"
+    },
+    {
+      "checkpoint": "seed_20260716/outer_fold_4/best_robust_clinical_utility.pth",
+      "bytes": 14407551,
+      "sha256": "696d7e678746446fcfeef0d000562c19c61f0c65978aa35e67c4d604670c5c21"
+    },
+    {
+      "checkpoint": "seed_20260717/outer_fold_0/best_robust_clinical_utility.pth",
+      "bytes": 14407551,
+      "sha256": "08c4e630e545f7723e20442b757c016800c9b2a32324a71561dbc171a33ac6cd"
+    },
+    {
+      "checkpoint": "seed_20260717/outer_fold_1/best_robust_clinical_utility.pth",
+      "bytes": 14407551,
+      "sha256": "2039d347997dd5a7720c27c7ff121e7c0b8333cd55b91b8f54ba1a3a87f3aae9"
+    },
+    {
+      "checkpoint": "seed_20260717/outer_fold_2/best_robust_clinical_utility.pth",
+      "bytes": 14407551,
+      "sha256": "42cc8db432db0612fddb4b456d80c2ca24a87fc3d440ad5f1bfb57bb7697e981"
+    },
+    {
+      "checkpoint": "seed_20260717/outer_fold_3/best_robust_clinical_utility.pth",
+      "bytes": 14407551,
+      "sha256": "edfc2b63809410e5d37f1b0cf55c7db13a54590a5df16b06fca4dc7ad251adeb"
+    },
+    {
+      "checkpoint": "seed_20260717/outer_fold_4/best_robust_clinical_utility.pth",
+      "bytes": 14407551,
+      "sha256": "3339f6adb8e20cb18465075279022b0c900f50fe6c52f7636d1ad7897d616c02"
+    }
+  ]
+}

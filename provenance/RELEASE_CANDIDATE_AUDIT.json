@@ -1,0 +1,234 @@
+{
+  "status": "candidate_pass_with_release_blockers",
+  "file_count": 43,
+  "manifest": [
+    {
+      "path": ".gitattributes",
+      "bytes": 115,
+      "sha256": "2b5689dc2359dc09d24430fad981d436539a02a3cd4168a270e0b08d9df9d17f"
+    },
+    {
+      "path": ".github/workflows/release-gates.yml",
+      "bytes": 1025,
+      "sha256": "c3294abc6c31213b63891e18b231dd820f8a8cdc0e121bee3a7bef40abcd9b94"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 158,
+      "sha256": "b03e487255d84db7d621a5d9a924732c0f61853ad3e513ceb2fb5b8f3c83c289"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 299,
+      "sha256": "391742efc3fab3c6c9cd8ee77b13013021a369f80025c990cc7e489ea9b7be41"
+    },
+    {
+      "path": "DATA_ACCESS.md",
+      "bytes": 888,
+      "sha256": "d41b96cb30556ba93b1e20bcf67479f9479dedba9a8e609c5f7531d7c82f29d1"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5309,
+      "sha256": "bb4ebf9358ce96375e02ed9d9c6bc000ff5290358eb82b71ea2f8ee67da168b0"
+    },
+    {
+      "path": "RELEASE_CHECKLIST.md",
+      "bytes": 2117,
+      "sha256": "7582b78acecaebfb317185fa509641df73a0baa4fc637e290cbfc031eafd91e8"
+    },
+    {
+      "path": "config/frozen_ensemble_v1.0.0.json",
+      "bytes": 8356,
+      "sha256": "d95027d009ad31f54ebd4576c58ea704a2a2bca8765a3cfef634c43be8192e83"
+    },
+    {
+      "path": "config/frozen_inference_config.yaml",
+      "bytes": 942,
+      "sha256": "f3d24e0397f422c9ed34b899387f0f2ae501361101fda7f62a774613bc377e5a"
+    },
+    {
+      "path": "config/release_policy_v1.0.0.json",
+      "bytes": 405,
+      "sha256": "4cb1cca3ad8d7e76ca50ea8e19741ecd7e14d2195e08682ad7811d7a3019bde6"
+    },
+    {
+      "path": "docs/CODE_AVAILABILITY_TEMPLATE.md",
+      "bytes": 1554,
+      "sha256": "a1e22c43985eb7ffb40aff335edd7b1d94ddc6edcfff80f562eb87c0f03fd84e"
+    },
+    {
+      "path": "docs/INPUT_SCHEMAS.md",
+      "bytes": 1054,
+      "sha256": "c7aad385af818614a6b70b20daf067efc54f50852d5c67a5ffb18413e298c77c"
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "bytes": 1062,
+      "sha256": "3ef862f31f91ac3a5537deb2248a01baa5b936b495d567397d09a94b6d9a9ddc"
+    },
+    {
+      "path": "environment.yml",
+      "bytes": 209,
+      "sha256": "2e20bad6400bdb2b4f162dd40c77fe60b68b3992f2d6aad6779e2253349d1548"
+    },
+    {
+      "path": "examples/synthetic/images/SYNTHETIC-001_rbpt.png",
+      "bytes": 4350,
+      "sha256": "1e4c0a615c6aca16116021f18ce80cddbfcb364e44ba5bc57de181db310bb3c9"
+    },
+    {
+      "path": "examples/synthetic/images/SYNTHETIC-001_sat100.png",
+      "bytes": 4342,
+      "sha256": "561924781e039b14adc0fc69bd27f976999f8edbc2e2d91c6596b8dd8a674eaf"
+    },
+    {
+      "path": "examples/synthetic/images/SYNTHETIC-001_sat200.png",
+      "bytes": 4409,
+      "sha256": "02eb6d67190e8e784debd46b597506f095837c03e461ab8c8d19ff518753b53d"
+    },
+    {
+      "path": "examples/synthetic/images/SYNTHETIC-001_sat25.png",
+      "bytes": 4535,
+      "sha256": "8ef7cf565fd3f3eb8d04cc78511433f3151eeb66ed3d2d2508d07fa849d03486"
+    },
+    {
+      "path": "examples/synthetic/images/SYNTHETIC-001_sat50.png",
+      "bytes": 4478,
+      "sha256": "5f06cf52d455819fe71c15b10f7c603f06bdcfe276a4fcf55b7194c98ffbb518"
+    },
+    {
+      "path": "examples/synthetic/manifest.csv",
+      "bytes": 632,
+      "sha256": "7489bff2cc18cfb69fb066b6b1fe4fdbf30aee3faaa3b1859412313f9fa2ae80"
+    },
+    {
+      "path": "examples/synthetic/predictions.csv",
+      "bytes": 694,
+      "sha256": "0bb18bd082db01156d22f1f93c6aefeadccd73c1673c28d6c358787aa3aa39b3"
+    },
+    {
+      "path": "models/README.md",
+      "bytes": 445,
+      "sha256": "e155e7053e8d5a226a2f9cb295390aed87c8fee4f911651c90924f7d32fdb502"
+    },
+    {
+      "path": "outputs/expected_demo_output.json",
+      "bytes": 747,
+      "sha256": "276d39a7157b63f9db06ddcab42c3588a20ddb66b694372ae9b2830bbecbff4c"
+    },
+    {
+      "path": "provenance/CONTROLLED_WEIGHT_PREFLIGHT.json",
+      "bytes": 3366,
+      "sha256": "408d51fd7f1dde9c24d6af68e91a855a110eb68755d41d60982c07bb83ba833a"
+    },
+    {
+      "path": "provenance/SOURCE_MAPPING.md",
+      "bytes": 2384,
+      "sha256": "9a72d802913361ead6ce711679adafe848fe38b108a92f300391d9b93eae5ac7"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 715,
+      "sha256": "d34bea059e60f7bd2ef1a68720e5e82371a6363cbf62e4c28520a1e3406c553b"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 83,
+      "sha256": "0cfb4490b97bbf47f76f9ee1887739a4d9eae6d485ca8d9238eb6e3b14e716b0"
+    },
+    {
+      "path": "scripts/audit_release.py",
+      "bytes": 12641,
+      "sha256": "bd4a98edff509e9bfa431459bcecedc0ac59e2b6399cfadd950817aa844c534c"
+    },
+    {
+      "path": "scripts/evaluate_predictions.py",
+      "bytes": 11461,
+      "sha256": "accb1a53be2465f4f4213fea359aa09a7c4bc6452ca7a0e4605a715f794d98f7"
+    },
+    {
+      "path": "scripts/generate_quantitative_outputs.py",
+      "bytes": 6874,
+      "sha256": "1ffb09832bc4590b38dec21a1bee035ca79c73ad7c273d2b44e0af3b855a4386"
+    },
+    {
+      "path": "scripts/generate_synthetic_example.py",
+      "bytes": 1797,
+      "sha256": "27ebbc926bdfb556c2ed82eda9dcd32514db60c63a6838a820cdbc03da7cc4fc"
+    },
+    {
+      "path": "scripts/plot_figure3.py",
+      "bytes": 5236,
+      "sha256": "46c73a79342571cd723d0a0f58b084dfb8cace5cbdc1613f3f7bffc7e36cc779"
+    },
+    {
+      "path": "scripts/run_frozen_inference.py",
+      "bytes": 12466,
+      "sha256": "f19ff49e550dc4ca886647c7abd0055108bda1be799b0902b7871ad9d7e1d7b4"
+    },
+    {
+      "path": "scripts/stage_frozen_weights.py",
+      "bytes": 4005,
+      "sha256": "3850adc8762700e077185cd785ca9b2f732cfeb2b97e3c9d16712877eb6c4105"
+    },
+    {
+      "path": "scripts/train_multimodal_cv5.py",
+      "bytes": 67012,
+      "sha256": "a6a46aa7e2c6e0d35d2f37a82608deaa22457d9d5b66e787ac35f20fb579efb9"
+    },
+    {
+      "path": "scripts/verify_demo_output.py",
+      "bytes": 2205,
+      "sha256": "36015208482a393c8b18d5e13d42ef03771f6557d668e50f8342781531425166"
+    },
+    {
+      "path": "src/br_sat_decision.py",
+      "bytes": 1845,
+      "sha256": "287fdcc82a3b118a2de260c54419740f58ad0543240b8bc98b7d5371b07c828d"
+    },
+    {
+      "path": "src/clinical_review.py",
+      "bytes": 12999,
+      "sha256": "938bbda63ce7538ecdd74d4076e9f4939c4bcddd69562b39d994eaff2f23ab99"
+    },
+    {
+      "path": "src/multimodal_cv_data.py",
+      "bytes": 16847,
+      "sha256": "fc6e1d7dff27f96202755e8b8c319e2fc1aae4acc6ef48be78d3d259f7028a44"
+    },
+    {
+      "path": "src/multimodal_cv_model.py",
+      "bytes": 10171,
+      "sha256": "500bb3cb11bedb2730ad2370e46280ce865a8aacb401a59c9e0d79937dba7069"
+    },
+    {
+      "path": "src/multimodal_data_nvidia.py",
+      "bytes": 18776,
+      "sha256": "f90924a111c489fa9ddd57400ac0761ca1bcd4b81dd9dae46fcc0d3266782d0a"
+    },
+    {
+      "path": "src/multimodal_model_nvidia.py",
+      "bytes": 9731,
+      "sha256": "17775252ca7abe5fe58e8e44c3ae3a77803b29ed9d982ffa14b1d3f5e33ec7ac"
+    },
+    {
+      "path": "tests/test_decision_rule.py",
+      "bytes": 1193,
+      "sha256": "4b402383c504f36dd671b2b418fc533e1c2d5d4b0412060387a0de365f709952"
+    }
+  ],
+  "privacy_and_secret_findings": [],
+  "ensemble_members": 15,
+  "public_model_weights": false,
+  "weight_files_in_repository": 0,
+  "weight_files_matching_manifest": 0,
+  "git_history_audited": true,
+  "git_history_findings": [],
+  "repository_metadata_findings": [],
+  "release_blockers": [
+    "institution-approved LICENSE is absent",
+    "model-weight non-public rationale is not documented",
+    "model-weight access conditions or request route are not documented"
+  ]
+}

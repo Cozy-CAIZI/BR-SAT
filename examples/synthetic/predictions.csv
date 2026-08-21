@@ -1,0 +1,13 @@
+case_id,cohort,site_code,reference_binary_id,frozen_three_class_prediction_id,p_negative,p_weak_positive,p_positive
+SYN-DEV-001,development_618,,0,0,0.72,0.18,0.10
+SYN-DEV-002,development_618,,1,2,0.12,0.28,0.60
+SYN-INT-001,internal_160,,0,0,0.55,0.30,0.15
+SYN-INT-002,internal_160,,1,1,0.20,0.50,0.30
+SYN-MC-001,multicentre_200,S01,0,0,0.66,0.20,0.14
+SYN-MC-002,multicentre_200,S01,1,2,0.10,0.25,0.65
+SYN-MC-003,multicentre_200,S02,0,0,0.44,0.34,0.22
+SYN-MC-004,multicentre_200,S02,1,1,0.18,0.48,0.34
+SYN-PRO-001,prospective_102,,0,0,0.51,0.31,0.18
+SYN-PRO-002,prospective_102,,1,2,0.08,0.27,0.65
+SYN-PRO-003,prospective_102,,0,1,0.32,0.43,0.25
+SYN-PRO-004,prospective_102,,1,0,0.40,0.35,0.25
