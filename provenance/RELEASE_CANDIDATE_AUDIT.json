@@ -1,6 +1,6 @@
 {
   "status": "candidate_pass_with_release_blockers",
-  "file_count": 43,
+  "file_count": 44,
   "manifest": [
     {
       "path": ".gitattributes",
@@ -19,8 +19,8 @@
     },
     {
       "path": "CITATION.cff",
-      "bytes": 299,
-      "sha256": "391742efc3fab3c6c9cd8ee77b13013021a369f80025c990cc7e489ea9b7be41"
+      "bytes": 346,
+      "sha256": "0c67df2a293b75be985008cff098a6adf54d00519d6281428ade8799a0ad031b"
     },
     {
       "path": "DATA_ACCESS.md",
@@ -28,14 +28,19 @@
       "sha256": "d41b96cb30556ba93b1e20bcf67479f9479dedba9a8e609c5f7531d7c82f29d1"
     },
     {
+      "path": "LICENSE",
+      "bytes": 1498,
+      "sha256": "d82ea682bc7ae80065d533dcba348ed11bd73c7cbc5f958fa63b15b8cf9b3def"
+    },
+    {
       "path": "README.md",
-      "bytes": 5309,
-      "sha256": "bb4ebf9358ce96375e02ed9d9c6bc000ff5290358eb82b71ea2f8ee67da168b0"
+      "bytes": 5308,
+      "sha256": "dfa689c4eb2954691cb8c7cd9a5ffc84c69963c0dd4c7847f04532d085e0a6de"
     },
     {
       "path": "RELEASE_CHECKLIST.md",
-      "bytes": 2117,
-      "sha256": "7582b78acecaebfb317185fa509641df73a0baa4fc637e290cbfc031eafd91e8"
+      "bytes": 2147,
+      "sha256": "ea42d7d6cb8b3337253a616f1aeb5b75a253e16bbf090dec0e9fd28131a2356f"
     },
     {
       "path": "config/frozen_ensemble_v1.0.0.json",
@@ -49,13 +54,13 @@
     },
     {
       "path": "config/release_policy_v1.0.0.json",
-      "bytes": 405,
-      "sha256": "4cb1cca3ad8d7e76ca50ea8e19741ecd7e14d2195e08682ad7811d7a3019bde6"
+      "bytes": 443,
+      "sha256": "596f71b600f382226702a468af9aa5598771bdfaf0cb265ee72dfe523de281d6"
     },
     {
       "path": "docs/CODE_AVAILABILITY_TEMPLATE.md",
-      "bytes": 1554,
-      "sha256": "a1e22c43985eb7ffb40aff335edd7b1d94ddc6edcfff80f562eb87c0f03fd84e"
+      "bytes": 1555,
+      "sha256": "f7cdf5674e2347f3f7d073a4c79428f2089f6c08d6e2ea691f9cb72ef1ff4202"
     },
     {
       "path": "docs/INPUT_SCHEMAS.md",
@@ -227,7 +232,6 @@
   "git_history_findings": [],
   "repository_metadata_findings": [],
   "release_blockers": [
-    "institution-approved LICENSE is absent",
     "model-weight non-public rationale is not documented",
     "model-weight access conditions or request route are not documented"
   ]

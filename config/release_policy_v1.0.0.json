@@ -1,6 +1,7 @@
 {
   "release": "v1.0.0",
   "public_source_code": true,
+  "software_license": "BSD-3-Clause",
   "public_model_weights": false,
   "model_weights_in_public_repository": false,
   "model_weight_restriction_rationale": null,

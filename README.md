@@ -91,6 +91,6 @@ See `DATA_ACCESS.md`. No participant-level images, hospital-identifying metadata
 
 ## Release status
 
-This directory is a release candidate, not yet the public `v1.0.0`. Final release is blocked on the exact institution-approved software licence, documentation of the non-public weight rationale and access conditions, and DOI archiving.
+This directory is a release candidate, not yet the public `v1.0.0`. The source code is licensed under BSD-3-Clause. Final release is blocked on documentation of the non-public weight rationale and access conditions, and DOI archiving.
 
 Every push and pull request runs compilation, decision-rule tests, and a public-boundary audit over the working tree and reachable Git history. A `v*` tag additionally requires the approved `LICENSE`, verified `CITATION.cff`, and compliance with the frozen release policy. For `v1.0.0`, the gate fails if any model weight is present or if the non-public weight rationale and access conditions are not documented.

@@ -3,6 +3,8 @@ message: "If you use this software, please cite it using the metadata below."
 title: "BR-SAT: protocol-constrained five-image inference and evaluation code"
 type: software
 authors:
-  - family-names: "CAIZI"
+  - family-names: "Yuan"
+    given-names: "Weijie"
 version: "1.0.0"
 repository-code: "https://github.com/Cozy-CAIZI/BR-SAT"
+license: BSD-3-Clause
