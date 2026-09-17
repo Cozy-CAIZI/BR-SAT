@@ -1,4 +1,4 @@
-"""Frozen BR-SAT aggregation and post-prediction binary mapping."""
+"""Frozen BR-SAT aggregation and examination-level binary decision rule."""
 
 from __future__ import annotations
 
@@ -7,6 +7,7 @@ import numpy as np
 
 THREE_CLASS_NAMES = ("negative", "weak_positive", "positive")
 BINARY_NAMES = ("non-reactive", "reactive")
+REACTIVE_THRESHOLD = 0.572
 
 
 def aggregate_member_probabilities(member_probabilities: np.ndarray) -> np.ndarray:
@@ -42,3 +43,12 @@ def reactive_score(mean_probabilities: np.ndarray) -> np.ndarray:
     if values.ndim != 2 or values.shape[1] != 3:
         raise ValueError("expected shape (examinations, 3)")
     return values[:, 1] + values[:, 2]
+
+
+def threshold_binary_decision(
+    mean_probabilities: np.ndarray, threshold: float = REACTIVE_THRESHOLD
+) -> np.ndarray:
+    """Map the ensemble reactive score to the frozen binary operating point."""
+    if not 0.0 < threshold < 1.0:
+        raise ValueError("threshold must be between zero and one")
+    return (reactive_score(mean_probabilities) >= threshold).astype(np.int64)

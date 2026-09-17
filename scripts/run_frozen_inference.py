@@ -26,8 +26,8 @@ from br_sat_decision import (  # noqa: E402
     THREE_CLASS_NAMES,
     aggregate_member_probabilities,
     direct_argmax,
-    map_three_class_to_binary,
     reactive_score,
+    threshold_binary_decision,
 )
 from multimodal_cv_data import AIRBPTSATDualViewDataset  # noqa: E402
 from multimodal_cv_model import AIRBPTSATDualViewModel, DualViewModelConfig  # noqa: E402
@@ -238,7 +238,7 @@ def main() -> int:
 
     mean = aggregate_member_probabilities(np.stack(member_outputs, axis=0))
     three_class = direct_argmax(mean)
-    binary = map_three_class_to_binary(three_class)
+    binary = threshold_binary_decision(mean)
     q_r = reactive_score(mean)
     output_rows = []
     for row_index, record in enumerate(records):
@@ -254,7 +254,7 @@ def main() -> int:
                 "frozen_three_class_prediction": THREE_CLASS_NAMES[int(three_class[row_index])],
                 "binary_prediction_id": int(binary[row_index]),
                 "binary_prediction": BINARY_NAMES[int(binary[row_index])],
-                "decision_rule": "member_temperature_softmax_then_probability_mean_then_direct_argmax_then_binary_mapping",
+                "decision_rule": "member_temperature_softmax_then_probability_mean_then_q_reactive_ge_0.572",
             }
         )
     write_csv(prediction_path, output_rows)
@@ -271,9 +271,9 @@ def main() -> int:
         "decision_rule": {
             "per_member_temperature_calibration": True,
             "probability_aggregation": "arithmetic mean",
-            "three_class_decision": "direct argmax",
-            "binary_mapping": "negative to non-reactive; weak-positive or positive to reactive",
-            "q_R_role": "discrimination analyses only",
+            "three_class_decision": "direct argmax retained as a traceability output",
+            "binary_decision": "reactive when q_R >= 0.572; non-reactive otherwise",
+            "q_R_role": "primary binary decision and continuous discrimination analyses",
         },
         "environment": {
             "python": sys.version.split()[0],

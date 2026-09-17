@@ -34,13 +34,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 5308,
-      "sha256": "dfa689c4eb2954691cb8c7cd9a5ffc84c69963c0dd4c7847f04532d085e0a6de"
+      "bytes": 5219,
+      "sha256": "f02d5a9550bab9b4bde7c72d3c7c3e63d53c36d5aa2b222592d987689ee83d77"
     },
     {
       "path": "RELEASE_CHECKLIST.md",
-      "bytes": 2147,
-      "sha256": "ea42d7d6cb8b3337253a616f1aeb5b75a253e16bbf090dec0e9fd28131a2356f"
+      "bytes": 2170,
+      "sha256": "712cc4226a8444c345ff0b473943e0f57e4b65e00b398266524acd0876e33a23"
     },
     {
       "path": "config/frozen_ensemble_v1.0.0.json",
@@ -49,8 +49,8 @@
     },
     {
       "path": "config/frozen_inference_config.yaml",
-      "bytes": 942,
-      "sha256": "f3d24e0397f422c9ed34b899387f0f2ae501361101fda7f62a774613bc377e5a"
+      "bytes": 963,
+      "sha256": "e39d77e38ede219d869d276251903a7840593e87a6ab99d8196f2616e690fa44"
     },
     {
       "path": "config/release_policy_v1.0.0.json",
@@ -59,18 +59,18 @@
     },
     {
       "path": "docs/CODE_AVAILABILITY_TEMPLATE.md",
-      "bytes": 1555,
-      "sha256": "f7cdf5674e2347f3f7d073a4c79428f2089f6c08d6e2ea691f9cb72ef1ff4202"
+      "bytes": 1551,
+      "sha256": "807ffc10c5f06a3871ac7c64607ab55e73c1f497045ee231fa2810b56ef3d007"
     },
     {
       "path": "docs/INPUT_SCHEMAS.md",
-      "bytes": 1054,
-      "sha256": "c7aad385af818614a6b70b20daf067efc54f50852d5c67a5ffb18413e298c77c"
+      "bytes": 1118,
+      "sha256": "7e86abcb946ca99e5573bc11baf3ded2ed7953213638e7c55d2235290fbc20a6"
     },
     {
       "path": "docs/REPRODUCIBILITY.md",
-      "bytes": 1062,
-      "sha256": "3ef862f31f91ac3a5537deb2248a01baa5b936b495d567397d09a94b6d9a9ddc"
+      "bytes": 1209,
+      "sha256": "dfdecc92b579eccd76f0fa433a2ff68aaabf05f4dd188fcb8ed423d49135fa5c"
     },
     {
       "path": "environment.yml",
@@ -149,13 +149,13 @@
     },
     {
       "path": "scripts/evaluate_predictions.py",
-      "bytes": 11461,
-      "sha256": "accb1a53be2465f4f4213fea359aa09a7c4bc6452ca7a0e4605a715f794d98f7"
+      "bytes": 11548,
+      "sha256": "251be420291802cd2ff49da9266e9161552bcfe205ae3010b07e86f9718556a1"
     },
     {
       "path": "scripts/generate_quantitative_outputs.py",
-      "bytes": 6874,
-      "sha256": "1ffb09832bc4590b38dec21a1bee035ca79c73ad7c273d2b44e0af3b855a4386"
+      "bytes": 6869,
+      "sha256": "1972dbf69384e09c6608333de62d9cba7277371477d97f7f0b80118a121a26fd"
     },
     {
       "path": "scripts/generate_synthetic_example.py",
@@ -169,8 +169,8 @@
     },
     {
       "path": "scripts/run_frozen_inference.py",
-      "bytes": 12466,
-      "sha256": "f19ff49e550dc4ca886647c7abd0055108bda1be799b0902b7871ad9d7e1d7b4"
+      "bytes": 12532,
+      "sha256": "ee593aaa3bcf048a6670b690c3010c2314b1b82ae56f0dacc9e1bbca166b4a6d"
     },
     {
       "path": "scripts/stage_frozen_weights.py",
@@ -189,8 +189,8 @@
     },
     {
       "path": "src/br_sat_decision.py",
-      "bytes": 1845,
-      "sha256": "287fdcc82a3b118a2de260c54419740f58ad0543240b8bc98b7d5371b07c828d"
+      "bytes": 2263,
+      "sha256": "c92a8a9cd01617f6b318e041d1d063b20555893d6681b07c35098977c655d7cd"
     },
     {
       "path": "src/clinical_review.py",
@@ -219,8 +219,8 @@
     },
     {
       "path": "tests/test_decision_rule.py",
-      "bytes": 1193,
-      "sha256": "4b402383c504f36dd671b2b418fc533e1c2d5d4b0412060387a0de365f709952"
+      "bytes": 1566,
+      "sha256": "a7148d9d18653063087f6631e88e86287fc31acb4f300cb5cf284f4bee7f0bcf"
     }
   ],
   "privacy_and_secret_findings": [],
@@ -228,7 +228,7 @@
   "public_model_weights": false,
   "weight_files_in_repository": 0,
   "weight_files_matching_manifest": 0,
-  "git_history_audited": true,
+  "git_history_audited": false,
   "git_history_findings": [],
   "repository_metadata_findings": [],
   "release_blockers": [
