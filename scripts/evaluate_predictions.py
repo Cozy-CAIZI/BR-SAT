@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Evaluate frozen BR-SAT predictions without fitting a new decision threshold."""
+"""Evaluate frozen BR-SAT predictions at the development-selected threshold."""
 
 from __future__ import annotations
 
@@ -17,6 +17,7 @@ import numpy as np
 
 
 BASE_SEED = 20260804
+REACTIVE_THRESHOLD = 0.572
 PREFERRED_COHORT_ORDER = (
     "development_618",
     "internal_160",
@@ -67,8 +68,8 @@ def read_rows(path: Path) -> list[dict]:
                 "site_code": item.get("site_code", "").strip(),
                 "y": y,
                 "three_class": three_class,
-                "pred": int(three_class > 0),
                 "q_r": float(probabilities[1] + probabilities[2]),
+                "pred": int(float(probabilities[1] + probabilities[2]) >= REACTIVE_THRESHOLD),
             }
         )
     if not rows:
@@ -284,8 +285,8 @@ def main() -> int:
 
     manifest = {
         "status": "PASS",
-        "primary_rule": "collapse frozen three-class direct argmax; no fitted binary threshold",
-        "continuous_score": "q_R = p_weak_positive + p_positive; discrimination only",
+        "primary_rule": "reactive when q_R >= 0.572; threshold selected from development out-of-fold predictions",
+        "continuous_score": "q_R = p_weak_positive + p_positive = 1 - p_negative",
         "input_sha256": hashlib.sha256(input_path.read_bytes()).hexdigest(),
         "rows": len(rows),
         "cohorts": cohorts,

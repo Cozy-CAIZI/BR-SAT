@@ -2,7 +2,7 @@
 
 Research code for BR-SAT, a protocol-constrained AI second reader for one patient-level RBPT image and four ordered SAT dilution images.
 
-This repository release candidate contains the five-image preprocessing and model definition, frozen 15-member ensemble inference, examination-level probability aggregation, the prespecified three-class direct-argmax rule and its post-prediction mapping to reactive versus non-reactive, statistical evaluation, and generation of quantitative figures and tables.
+This repository release candidate contains the five-image preprocessing and model definition, frozen 15-member ensemble inference, examination-level probability aggregation, the development-selected binary threshold rule, statistical evaluation, and generation of quantitative figures and tables.
 
 ## Research-use boundary
 
@@ -57,12 +57,7 @@ python scripts/verify_demo_output.py --predictions results/synthetic/predictions
 
 ## Frozen decision rule
 
-For member `m`, logits are divided by that member's prespecified temperature and converted to three-class probabilities. The 15 probability vectors are averaged arithmetically. The primary three-class prediction is the direct argmax of the mean vector. Only after that prediction is fixed is the binary mapping applied:
-
-- `negative` → `non-reactive`
-- `weak_positive` or `positive` → `reactive`
-
-The continuous score `q_R = P(weak_positive) + P(positive) = 1 - P(negative)` is used for discrimination analyses only. It is not a replacement threshold for the primary decision.
+For member `m`, logits are divided by that member's prespecified temperature and converted to three-class probabilities. The 15 probability vectors are averaged arithmetically. The examination-level reactive score is `q_R = P(weak_positive) + P(positive) = 1 - P(negative)`. The primary binary output is reactive when `q_R >= 0.572` and non-reactive otherwise. The threshold was selected from development out-of-fold predictions and is applied unchanged to evaluation cohorts. The direct three-class argmax is retained in inference output for traceability.
 
 ## Statistical evaluation and quantitative outputs
 

@@ -20,17 +20,14 @@ ensemble:
   per_member_temperature_calibration: true
   probability_aggregation: arithmetic_mean
 decision:
-  three_class_rule: direct_argmax
-  negative_class_id: 0
-  binary_mapping:
-    negative: non-reactive
-    weak_positive: reactive
-    positive: reactive
-  additional_probability_threshold: false
+  binary_rule: q_R_greater_than_or_equal_to_threshold
+  reactive_threshold: 0.572
+  threshold_selection_data: development_out_of_fold_predictions
+  three_class_traceability_rule: direct_argmax
 continuous_score:
   name: q_R
   definition: p_weak_positive_plus_p_positive
-  role: discrimination_analyses_only
+  role: primary_binary_decision_and_discrimination_analyses
 clinical_boundary:
   intended_use: research_reproducibility_and_expert_governed_second_reader_evaluation
   autonomous_diagnosis: false

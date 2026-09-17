@@ -4,8 +4,8 @@ The repository must not be described as the final archived release until every i
 
 - [x] Isolated repository directory; the clinical project root is not initialised as Git.
 - [x] Five-image preprocessing and model source included.
-- [x] Frozen 15-member inference, member-specific temperatures, arithmetic probability mean and direct argmax implemented.
-- [x] Post-argmax binary mapping and `q_R` analysis-only role tested.
+- [x] Frozen 15-member inference, member-specific temperatures, arithmetic probability mean, and `q_R` implemented.
+- [x] Development-selected `q_R >= 0.572` binary rule and direct-argmax traceability output tested.
 - [x] Statistical evaluation and quantitative figure/table generation included.
 - [x] Synthetic five-image example included; no real participant input included.
 - [x] All 15 local checkpoint SHA-256 values verified during the full-ensemble synthetic smoke test.

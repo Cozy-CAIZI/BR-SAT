@@ -18,6 +18,6 @@ Required UTF-8 CSV columns:
 case_id,cohort,reference_binary_id,frozen_three_class_prediction_id,p_negative,p_weak_positive,p_positive
 ```
 
-`reference_binary_id` is `0` for non-reactive and `1` for reactive. `frozen_three_class_prediction_id` is `0` for negative, `1` for weak positive and `2` for positive. The script derives the primary binary prediction from the frozen three-class prediction; it does not fit a threshold. An optional non-identifying `site_code` enables descriptive site and leave-one-site-out analyses.
+`reference_binary_id` is `0` for non-reactive and `1` for reactive. `frozen_three_class_prediction_id` is `0` for negative, `1` for weak positive and `2` for positive and is retained for traceability. The script derives `q_R` from the three probabilities and applies the frozen development-selected threshold of 0.572; it does not refit a threshold. An optional non-identifying `site_code` enables descriptive site and leave-one-site-out analyses.
 
 Only a privacy-reviewed, authorised analysis table should be supplied. The repository intentionally contains no real case-level evaluation input.

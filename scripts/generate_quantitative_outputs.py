@@ -70,7 +70,7 @@ def figure3(metrics: list[dict[str, str]], output: Path) -> None:
         axis.tick_params(axis="y", length=0)
         axis.set_title(f"{chr(65 + panel)}  {title}", loc="left", fontweight="bold")
         axis.set_xlabel("Estimate (95% CI)")
-    fig.suptitle("Frozen direct-argmax binary performance across evidence layers", fontweight="bold")
+    fig.suptitle("Fixed-threshold binary performance across evidence layers", fontweight="bold")
     fig.tight_layout()
     save(fig, output / "Figure_3_quantitative_performance")
 
